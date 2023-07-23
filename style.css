@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.lightgreencheck:checked, .lightgreenbg {
+    background-color: rgb(84, 253, 84) !important;
+}

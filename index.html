@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Spotify - Web Player: Music for Everyone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="images\spotify-download.png" type="image/png" rel="icon" />
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <!-- font-awesome library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap css libraries-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+</head>
+
+<body class="bg-black">
+  <div class="row p-2">
+    <!-- Sidebar-->
+    <nav class="col-3">
+      <div class="navbar-nav bg-dark rounded px-4 py-2 mb-3" data-bs-theme="dark" style="--bs-bg-opacity: .5;">
+      <a class="nav-link pb-2" href="index.html">
+        <i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i>
+        <span class="navbar-text text-white fw-bold ps-3">Home</span>
+      </a>
+      <a class="nav-link" href="#">
+        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+        <span class="navbar-text text-light fw-bold ps-3">Search</span>
+      </a>
+      </div>
+
+      <!-- library section-->
+      <div class="navbar-nav bg-dark rounded" data-bs-theme="dark" style="--bs-bg-opacity: .5;">
+        <a class="nav-link mx-4 my-2">
+        <i class="fa-solid fa-book-open fa-lg" style="color: #ffffff;"></i>
+        <span class="navbar-text text-white fw-bold ps-3">Your Library</span>
+        </a>
+
+          <!-- card inside libraries-->
+        <div class="container-fluid overflow-auto mb-2" style="height: 8rem;">
+        <div class="card border-0" style="width: 100%;" style="--bs-bg-opacity: 0;">
+          <div class="card-body">
+            <h5 class="card-title text-white fs-5">Create your first playlist</h5>
+            <p class="card-text">Its easy we will help you</p>
+            <button class="btn rounded-pill bg-light fw-bold" data-bs-theme="light">Create Playlist</button>
+          </div>
+        </div>
+        <div class="card border-0" style="width: 100%;" style="--bs-bg-opacity: 0;">
+          <div class="card-body">
+            <h5 class="card-title text-white fs-5">Lets find some podcasts to follow</h5>
+            <p class="card-text">We will keep you updated on new episodes</p>
+            <button class="btn rounded-pill bg-light fw-bold" data-bs-theme="light">Browse podcasts</button>
+          </div>
+        </div>
+        </div>
+
+        <!-- library links-->
+        <div class="py-3 px-4">
+        <a class="nav-link text-secondary fs-6 d-inline-block me-3" href="#">Legal</a>
+        <a class="nav-link text-secondary fs-6 d-inline-block me-3" href="#">Privacy Center</a>
+        <a class="nav-link text-secondary fs-6 d-inline-block me-3" href="#">Privacy Policy</a>
+        <a class="nav-link text-secondary fs-6 d-inline-block me-3" href="#">Cookies</a>
+        <a class="nav-link text-secondary fs-6 d-inline-block me-3" href="#">About Ads</a>
+        <a class="nav-link text-secondary fs-6 d-inline-block me-3" href="#">Accessibility</a>
+        </div>
+
+        <button class="btn rounded-pill border mx-4 mb-4" style="width: fit-content;">
+        <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+        <span class="text-light fw-bold">English</span>
+        </button>
+
+      </div>
+    </nav>
+
+    <main class="col-9 bg-dark rounded overflow-auto text-white" style="height: 32.5rem;">
+      <!-- signup and login-->
+      <div class="row p-3 justify-content-between bg-black position-sticky" style="--bs-bg-opacity: 0.2;">
+        <div class="col-2">
+          <span class="d-inline-block px-3 py-2 me-2 bg-black rounded-circle"><i class="fa-solid fa-chevron-left " style="color: #ffffff;"></i></span>
+          <span class="d-inline-block px-3 py-2 bg-black rounded-circle"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></span>
+        </div>
+        <div class="col-4">
+          <button class="btn border-0 bg-dark-subtle fw-semibold offset-3" data-bs-theme="dark">Sign up</button>
+          <a class="btn rounded-pill mx-4 py-2 px-4 bg-white fw-semibold text-black" href="login.html">Log in</a>
+        </div>
+      </div>
+
+      <!-- focus header-->
+      <div class="row justify-content-between mt-3">
+        <div class="col-3">
+          <h4 class="d-inline">Focus</h4>
+        </div>
+        <div class="col-1">
+          <a href="#" class="float-lg-end d-inline link-light link-underline-opacity-0">Show all</a>
+        </div>
+      </div>
+
+      <!-- focus content-->
+      <div class="row px-3 mt-3 justify-content-evenly">
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\peaceful-piano.jpg" class="card-img-top" alt="peaceful piano image">
+          <div class="card-body px-0">
+            <span class="card-title text-white fs-5">Peaceful Piano</span>
+            <p class="card-text text-white-50 text-truncate">Peaceful piano to help you slow down, breathe, and relax.</p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\deep-focus.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">Deep Focus</h5>
+            <p class="card-text text-white-50 text-truncate">Keep calm and focus with ambient and post-rock music.</p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\instrumental-study.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">Instrumental Study</h5>
+            <p class="card-text text-white-50 text-truncate">Focus with soft study music in the background.</p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\focus-flow.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">Focus Flow</h5>
+            <p class="card-text text-white-50 text-truncate">Uptempo instrumental hip hop beats.</p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\workday-lounge.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">Workday Lounge</h5>
+            <p class="card-text text-white-50 text-truncate">Lounge and chill out music for your workday.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- spotify playlists header-->
+      <div class="row justify-content-between mt-3">
+        <div class="col-3">
+          <h4 class="d-inline">Spotify Playlists</h4>
+        </div>
+        <div class="col-1">
+          <a href="#" class="float-lg-end d-inline link-light link-underline-opacity-0">Show all</a>
+        </div>
+      </div>
+
+      <!-- spotify playlists content-->
+      <div class="row px-3 mt-3 justify-content-evenly">
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\today-tophit.jpg" class="card-img-top" alt="peaceful piano image">
+          <div class="card-body px-0">
+            <span class="card-title text-white fs-5">Today's Top Hit</span>
+            <p class="card-text text-white-50 text-truncate">Travis Scott is on top of the Hottest 50!</p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\rap-caviar.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">RapCaviar</h5>
+            <p class="card-text text-white-50 text-truncate">New music from Lil Tjay, Quavo and JT of City Girls.</p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\all-out-2010s.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">All Out 2010s</h5>
+            <p class="card-text text-white-50 text-truncate">The biggest songs of the 2010s.</p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\rock-classics.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">Rock Classics</h5>
+            <p class="card-text text-white-50 text-truncate">Rock legends & epic songs that continue to inspire generations. Cover: Foo Fighters</p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\chill-hits.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">Chill Hits</h5>
+            <p class="card-text text-white-50 text-truncate">Kick back to the best new and recent chill hits.</p>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Sound of india header-->
+      <div class="row justify-content-between mt-3">
+        <div class="col-3">
+          <h4 class="d-inline">Sound of India</h4>
+        </div>
+        <div class="col-1">
+          <a href="#" class="float-lg-end d-inline link-light link-underline-opacity-0">Show all</a>
+        </div>
+      </div>
+
+      <!-- sound of india content-->
+      <div class="row px-3 mt-3 mb-4 justify-content-evenly">
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\sound-of-mumbai.jpg" class="card-img-top" alt="peaceful piano image">
+          <div class="card-body px-0">
+            <span class="card-title text-white fs-5">Sound of Mumbai</span>
+            <p class="card-text text-white-50 text-truncate">The songs that define, unite and distinguish Mumbai IN, according to listening patterns and math. </p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\sound-of-kolkata.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">Sound of Kolkata</h5>
+            <p class="card-text text-white-50 text-truncate">The songs that define, unite and distinguish Kolkata IN, according to listening patterns and math.</p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\sound-of-delhi.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">Sound of Delhi</h5>
+            <p class="card-text text-white-50 text-truncate">The songs that define, unite and distinguish Delhi IN, according to listening patterns and math.</p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\sound-of-bangaluru.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">Sound of Bengaluru</h5>
+            <p class="card-text text-white-50 text-truncate">The songs that define, unite and distinguish Bengaluru IN, according to listening patterns and math.</p>
+          </div>
+        </div>
+
+        <div class="col-2 card border-0 bg-black p-3"  style="--bs-bg-opacity: 0.3;">
+          <img src="images\sound-of-chennai.jpg" class="card-img-top" alt="deep focus image">
+          <div class="card-body px-0">
+            <h5 class="card-title text-white fs-5">Sound of Chennai</h5>
+            <p class="card-text text-white-50 text-truncate">The songs that define, unite and distinguish Chennai IN, according to listening patterns and math.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer links-->
+      <div class="row px-3 mt-5 pt-5 justify-content-evenly">
+        <div class="col-2">
+          <h5>Company</h5>
+          <a href="#" class="link-light link-underline-opacity-0 d-block">About</a>
+          <a href="#" class="link-light link-underline-opacity-0 d-block">Jobs</a>
+          <a href="#" class="link-light link-underline-opacity-0 d-block">For the Record</a>
+        </div>
+
+        <div class="col-2">
+          <h5>Communities</h5>
+          <a href="#" class="link-light link-underline-opacity-0 d-block">For artists</a>
+          <a href="#" class="link-light link-underline-opacity-0 d-block">developers</a>
+          <a href="#" class="link-light link-underline-opacity-0 d-block">Advertising</a>
+          <a href="#" class="link-light link-underline-opacity-0 d-block">Investors</a>
+          <a href="#" class="link-light link-underline-opacity-0 d-block">Vendors</a>
+          <a href="#" class="link-light link-underline-opacity-0 d-block">Spotify for Work</a>
+        </div>
+
+        <div class="col-2">
+          <h5>Useful links</h5>
+          <a href="#" class="link-light link-underline-opacity-0 d-block">Support</a>
+          <a href="#" class="link-light link-underline-opacity-0 d-block">Free Mobile App</a>
+        </div>
+
+        <div class="col-2"></div>
+
+        <div class="col-2">
+          <span class="d-inline-block bg-white px-2 py-1 me-2 rounded-circle"  style="--bs-bg-opacity: 0.3;"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></span>
+          <span class="d-inline-block bg-white px-2 py-1 me-2 rounded-circle"  style="--bs-bg-opacity: 0.3;"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></span>
+          <span class="d-inline-block bg-white px-2 py-1 me-2 rounded-circle"  style="--bs-bg-opacity: 0.3;"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></span>
+        </div>
+      </div>
+
+      <hr class="mt-5">
+      <p class="ps-4 my-5">&copy; 2023 Spotify AB</p>
+    </main>
+  </div>
+
+  <!-- sign up bottom-->
+  <footer class="row px-2">
+    <div class="col-12 text-white ps-4 pt-2" style="background-image: linear-gradient(to right, rgb(212, 9, 212), rgb(83, 166, 194));">
+      <div class="row">
+        <p class="col-10">PREVIEW ON SPOTIFY <br>
+          Sign uo to get unlimited songs and podcasts with ocassional ads. No credit card needed.
+        </p>
+        <div class="col-2">
+          <button class="btn btn-light rounded-pill offset-3 mt-2"><strong>Sign up free</strong></button>
+        </div>
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+
+</html>
